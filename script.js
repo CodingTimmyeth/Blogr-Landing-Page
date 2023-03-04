@@ -8,6 +8,7 @@ const carot = document.getElementById('carot-down')
 const extraMenu = document.getElementById('extra-menu')
 const carotUp = document.getElementById('caret-up')
 const carotIcons = document.getElementById('carot-icons')
+const connect = document.getElementById('connect')
 
 hamburger.addEventListener('click', function () {
     if(menu.classList.contains('open')) {
@@ -30,7 +31,7 @@ hamburger.addEventListener('click', function () {
     }
 })
 
-carotIcons.addEventListener('click', function () {
+connect.addEventListener('click', function () {
     if(extraMenu.classList.contains('close')){
         console.log('open extra menu');
         carotUp.classList.remove('close')

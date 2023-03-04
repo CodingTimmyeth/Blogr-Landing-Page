@@ -19,9 +19,9 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="h-screen w-screen text-white font-Overpass">
+<body class="h-auto w-screen text-white font-Overpass">
   <!-- Container for background image  -->
-  <header id="desktop-image" class="bg-lightRed bg-cover text-center px-5 pt-14" style="background-image: url('/images/bg-pattern-intro-mobile.svg'); opacity: .95;">
+  <header id="desktop-image" class="bg-lightRed bg-cover text-center px-5 pt-14 mb-24" style="background-image: url('/images/bg-pattern-intro-mobile.svg'); opacity: .95;">
     <!-- Container for Logo and Menu -->
     <div class="flex items-center justify-between mb-24">
       <p class="font-bold text-2xl">Blogr</p>
@@ -54,7 +54,7 @@
           <i class='bx bx-caret-down text-lightRed cursor-pointer'></i>
         </div>
         <div class="w-full  pt-8 flex flex-col justify-center items-center mb-7">
-          <div class="flex mb-4">
+          <div id="connect" class="cursor-pointer flex mb-4">
             <p class="mr-2 font-bold text-black">Connect</p>
             <div id="carot-icons">
               <i id="carot-down" class='opem bx bx-caret-down text-lightRed cursor-pointer'></i>
@@ -76,6 +76,104 @@
       </div>
     </div>
   </header>
+  <main class="text-center text-black flex flex-col mb-60">
+    <div class="mb-10">
+      <p class="text-2xl font-bold">  Designed for the future</p>
+    </div>
+    <div class="mb-12">
+      <img src="/images/illustration-editor-mobile.svg" alt="Illustration Editor">
+    </div>
+    <div class="flex flex-col mb-11">
+      <div class="font-bold text-2xl text-veryDarkGrayBlue mb-6 px-14">
+        <p>Introducing an extensible editor</p>
+      </div>
+      <div class="text-veryDarkGrayish px-5">
+        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.
+
+      </div>
+    </div>
+    <div class="flex flex-col mb-11">
+      <div class="font-bold text-2xl text-veryDarkGrayBlue mb-6 px-14">
+        <p>Robust content management</p>
+      </div>
+      <div class="text-veryDarkGrayish px-10">
+        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      </div>
+    </div>
+  </main>
+  <section class="bg-veryDarkBlue mb-16">
+    <div class="relative">
+      <img src="/images/illustration-phones.svg" alt="2x iPhone 11 showing the brand name and catalog" class="absolute -top-40">
+    </div>
+    <div class="flex flex-col text-center mt-64 absolute">
+      <div class="font-bold text-4xl mb-6 px-10">
+        <p>State of the Art Infrastructure</p>
+      </div>
+      <div class="px-10 text-md font-thin">
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </div>
+    </div>
+  </section>
+  <div id="section-two" class="text-center mb-20" >
+    <div id="laptop" class="h-96 mb-4"></div>
+    <div class="flex flex-col text-center mb-12">
+      <div class="font-bold text-4xl mb-6 px-8">
+        <p class="text-black text-2xl">Free, open, simple</p>
+      </div>
+      <div class="px-10 text-veryDarkGrayish text-md font-thin">
+        Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </div>
+    </div>
+    <div class="flex flex-col text-center">
+      <div class="font-bold text-4xl mb-6 px-8">
+        <p class="text-black text-2xl">Powerful tooling</p>
+      </div>
+      <div class="px-10 text-veryDarkGrayish text-md font-thin">
+        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </div>
+    </div>
+  </div>
+  <footer class="bg-veryDarkBlackBlue text-center">
+    <div class="pt-16 mb-16">
+      <p class="font-bold text-3xl">Blogr</p>
+    </div>
+    <div class="mb-4">
+      <p class="font-bold">Product</p>
+    </div>
+    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+      <a href="#">Overview</a>
+      <a href="#">Pricing</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Features</a>
+      <a href="#">Integrations</a>
+    </div>
+    <div class="mb-4">
+      <p class="font-bold">Company</p>
+    </div>
+    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+      <a href="#">About</a>
+      <a href="#">Team</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="mb-4">
+      <p class="font-bold">Connect</p>
+    </div>
+    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+      <a href="#">Contact</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Linkedln</a>
+    </div>
+
+  </footer>
 
 
 
@@ -96,9 +194,6 @@
 
   Connect
 
-  Contact
-  Newsletter
-  LinkedIn
   
   Login
   Sign Up
