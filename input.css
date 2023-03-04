@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#desktop-image{
+    height: 525px;
+    border-bottom-left-radius: 100px;
+    width: 100%;
+    background-size: 1200px;
+    background-position: 34% 34%;
+    opacity: 10;
+}
+
+/* Menu-Links when opened */
+#menu-links{
+    height: 511px;
+    /* max-height: 511px; */
+    width: 324px;
+}
+
+/* Styling for opening and closing Menu */
+.open{
+    display: block;
+}
+.close{
+    display: none;
+}

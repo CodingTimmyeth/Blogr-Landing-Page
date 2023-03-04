@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
   
@@ -19,8 +19,67 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  Product
+<body class="h-screen w-screen text-white font-Overpass">
+  <!-- Container for background image  -->
+  <header id="desktop-image" class="bg-lightRed bg-cover text-center px-5 pt-14" style="background-image: url('/images/bg-pattern-intro-mobile.svg'); opacity: .95;">
+    <!-- Container for Logo and Menu -->
+    <div class="flex items-center justify-between mb-24">
+      <p class="font-bold text-2xl">Blogr</p>
+      <div id="hamburger-menu" class="cursor-pointer">
+        <img id="menu" src="images/icon-hamburger.svg" alt="Hamburger-Menu" class="open">
+        <img id="xmark" src="images/icon-close.svg" alt="Close Menu" class="close">
+      </div>
+    </div>
+    <!-- Container for Title and Description  -->
+    <div class="flex flex-col items-center relative">
+      <div class="font-bold text-2xl mb-4 px-10">
+        <p>A modern</p>
+        <p>publishing platform</p>
+      </div>
+      <div class="font-thin mb-11 text-grayishBlue text-sm px-10">
+        <p>  Grow your audience and build your online brand        </p>
+      </div>
+      <div class="flex justify-center w-full">
+        <button class="px-4 py-3 mr-4 bg-white text-lightRed font-bold rounded-full">Start for Free</button>
+        <button class="px-5 py-3 bg-transparent border border-solid border-white rounded-full">Learn More</button>
+      </div>
+          <!-- Container for Menu Links -->
+      <div id="menu-links" class="close bg-white shadow-xl absolute -top-14 bottom-0 rounded-lg text-center text-black">
+        <div class="w-full  pt-8 flex justify-center items-center rounded-t-lg">
+          <p class="mr-2 font-bold text-black">Product</p>
+          <i class='bx bx-caret-down text-lightRed cursor-pointer'></i>
+        </div>
+        <div class="w-full  pt-8 flex justify-center items-center">
+          <p class="mr-2 font-bold text-black">Company</p>
+          <i class='bx bx-caret-down text-lightRed cursor-pointer'></i>
+        </div>
+        <div class="w-full  pt-8 flex flex-col justify-center items-center mb-7">
+          <div class="flex mb-4">
+            <p class="mr-2 font-bold text-black">Connect</p>
+            <div id="carot-icons">
+              <i id="carot-down" class='opem bx bx-caret-down text-lightRed cursor-pointer'></i>
+              <i id="caret-up" class='close bx bx-caret-up text-lightRed cursor-pointer'></i>
+            </div>
+          </div>
+          <div id="extra-menu" class=" close flex flex-col items-center w-11/12 bg-gray-300 rounded-lg py-4 text-lg">
+            <div class="py-2">Contact</div>
+            <div class="py-2">Newsletter</div>
+            <div class="py-2">Linkedln</div>
+          </div>
+        </div>
+        <div class="w-11/12 m-auto border-b border-grayishBlue mb-5 flex items-center justify-center"></div>
+        <!-- Login / Signup Buttons -->
+        <div class="flex flex-col justify-center items-center">
+          <button class="font-bold mb-6">Login</button>
+          <button class="px-7 py-3 bg-lightRed rounded-full text-white">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Product
 
   Overview
   Pricing
@@ -45,7 +104,6 @@
   Sign Up
 
   A modern publishing platform
-  Grow your audience and build your online brand
 
   Start for Free
   Learn More
@@ -94,11 +152,14 @@
   
   Contact
   Newsletter
-  LinkedIn
+  LinkedIn -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+
+  <script src="script.js"></script>
 </body>
 </html>

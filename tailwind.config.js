@@ -34,7 +34,7 @@ module.exports = {
       fontFamily: {
         Overpass: "'Overpass', serif",
         Ubuntu: "'Ubuntu', serif"
-      }
+      },
     },
   },
   plugins: [],
