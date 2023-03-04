@@ -1,183 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
-  
-  <title>Blogr Landing Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Blogr Landing Page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body class="h-auto w-screen text-white font-Overpass">
-  <!-- Container for background image  -->
-  <header id="desktop-image" class="bg-lightRed bg-cover text-center px-5 pt-14 mb-24" style="background-image: url('/images/bg-pattern-intro-mobile.svg'); opacity: .95;">
-    <!-- Container for Logo and Menu -->
-    <div class="flex items-center justify-between mb-24">
-      <p class="font-bold text-2xl">Blogr</p>
-      <div id="hamburger-menu" class="cursor-pointer">
-        <img id="menu" src="images/icon-hamburger.svg" alt="Hamburger-Menu" class="open">
-        <img id="xmark" src="images/icon-close.svg" alt="Close Menu" class="close">
-      </div>
-    </div>
-    <!-- Container for Title and Description  -->
-    <div class="flex flex-col items-center relative">
-      <div class="font-bold text-2xl mb-4 px-10">
-        <p>A modern</p>
-        <p>publishing platform</p>
-      </div>
-      <div class="font-thin mb-11 text-grayishBlue text-sm px-10">
-        <p>  Grow your audience and build your online brand        </p>
-      </div>
-      <div class="flex justify-center w-full">
-        <button class="px-4 py-3 mr-4 bg-white text-lightRed font-bold rounded-full">Start for Free</button>
-        <button class="px-5 py-3 bg-transparent border border-solid border-white rounded-full">Learn More</button>
-      </div>
-          <!-- Container for Menu Links -->
-      <div id="menu-links" class="close bg-white shadow-xl absolute -top-14 bottom-0 rounded-lg text-center text-black">
-        <div class="w-full  pt-8 flex justify-center items-center rounded-t-lg">
-          <p class="mr-2 font-bold text-black">Product</p>
-          <i class='bx bx-caret-down text-lightRed cursor-pointer'></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="h-auto w-screen text-white font-Overpass">
+    <!-- Container for background image  -->
+    <header
+      id="desktop-image"
+      class="bg-lightRed bg-cover text-center px-5 pt-14 mb-24"
+      style="
+        background-image: url('/images/bg-pattern-intro-mobile.svg');
+        opacity: 0.95;
+      "
+    >
+      <!-- Container for Logo and Menu -->
+      <div class="flex items-center justify-between mb-24">
+        <p class="font-bold text-2xl">Blogr</p>
+        <div id="hamburger-menu" class="cursor-pointer xl:hidden">
+          <img
+            id="menu"
+            src="images/icon-hamburger.svg"
+            alt="Hamburger-Menu"
+            class="open"
+          />
+          <img
+            id="xmark"
+            src="images/icon-close.svg"
+            alt="Close Menu"
+            class="close"
+          />
         </div>
-        <div class="w-full  pt-8 flex justify-center items-center">
-          <p class="mr-2 font-bold text-black">Company</p>
-          <i class='bx bx-caret-down text-lightRed cursor-pointer'></i>
+      </div>
+      <!-- Container for Title and Description  -->
+      <div class="flex flex-col items-center relative">
+        <div class="font-bold text-2xl mb-4 px-10">
+          <p>A modern</p>
+          <p>publishing platform</p>
         </div>
-        <div class="w-full  pt-8 flex flex-col justify-center items-center mb-7">
-          <div id="connect" class="cursor-pointer flex mb-4">
-            <p class="mr-2 font-bold text-black">Connect</p>
-            <div id="carot-icons">
-              <i id="carot-down" class='opem bx bx-caret-down text-lightRed cursor-pointer'></i>
-              <i id="caret-up" class='close bx bx-caret-up text-lightRed cursor-pointer'></i>
+        <div class="font-thin mb-11 text-grayishBlue text-sm px-10">
+          <p>Grow your audience and build your online brand</p>
+        </div>
+        <div class="flex justify-center w-full">
+          <button
+            class="px-4 py-3 mr-4 bg-white text-lightRed font-bold rounded-full"
+          >
+            Start for Free
+          </button>
+          <button
+            class="px-5 py-3 bg-transparent border border-solid border-white rounded-full"
+          >
+            Learn More
+          </button>
+        </div>
+        <!-- Container for Menu Links -->
+        <div
+          id="menu-links"
+          class="close bg-white shadow-xl absolute -top-14 bottom-0 rounded-lg text-center text-black xl:flex xl:bg-inherit xl:-top-96 xl:bg-black"
+        >
+          <div
+            class="w-full pt-8 flex justify-center items-center rounded-t-lg"
+          >
+            <p class="mr-2 font-bold text-black">Product</p>
+            <i class="bx bx-caret-down text-lightRed cursor-pointer"></i>
+          </div>
+          <div class="w-full pt-8 flex justify-center items-center">
+            <p class="mr-2 font-bold text-black">Company</p>
+            <i class="bx bx-caret-down text-lightRed cursor-pointer"></i>
+          </div>
+          <div
+            class="w-full pt-8 flex flex-col justify-center items-center mb-7"
+          >
+            <div id="connect" class="cursor-pointer flex mb-4">
+              <p class="mr-2 font-bold text-black">Connect</p>
+              <div id="carot-icons">
+                <i
+                  id="carot-down"
+                  class="opem bx bx-caret-down text-lightRed cursor-pointer"
+                ></i>
+                <i
+                  id="caret-up"
+                  class="close bx bx-caret-up text-lightRed cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div
+              id="extra-menu"
+              class="close flex flex-col items-center w-11/12 bg-gray-300 rounded-lg py-4 text-lg"
+            >
+              <div class="py-2">Contact</div>
+              <div class="py-2">Newsletter</div>
+              <div class="py-2">Linkedln</div>
             </div>
           </div>
-          <div id="extra-menu" class=" close flex flex-col items-center w-11/12 bg-gray-300 rounded-lg py-4 text-lg">
-            <div class="py-2">Contact</div>
-            <div class="py-2">Newsletter</div>
-            <div class="py-2">Linkedln</div>
+          <div
+            class="w-11/12 m-auto border-b border-grayishBlue mb-5 flex items-center justify-center xl:border-none"
+          ></div>
+          <!-- Login / Signup Buttons -->
+          <div
+            class="flex flex-col justify-center items-center xl:flex xl:flex-row"
+          >
+            <button class="font-bold mb-6 xl:mb-0">Login</button>
+            <button class="px-7 py-3 bg-lightRed rounded-full text-white">
+              Sign Up
+            </button>
           </div>
         </div>
-        <div class="w-11/12 m-auto border-b border-grayishBlue mb-5 flex items-center justify-center"></div>
-        <!-- Login / Signup Buttons -->
-        <div class="flex flex-col justify-center items-center">
-          <button class="font-bold mb-6">Login</button>
-          <button class="px-7 py-3 bg-lightRed rounded-full text-white">Sign Up</button>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main
+      class="text-center text-black flex flex-col mb-60 xl:px-24 xl:relative xl:overflow-hidden xl:mb-5"
+    >
+      <div>
+        <div class="mb-10 xl:items-end">
+          <p class="text-2xl font-bold xl:text-4xl xl:mt-16">
+            Designed for the future
+          </p>
+        </div>
+        <div class="mb-12">
+          <img
+            src="/images/illustration-editor-mobile.svg"
+            alt="Illustration Editor"
+            class="xl:hidden"
+          />
+          <img
+            src="/images/illustration-editor-desktop.svg"
+            alt="Desktop Editor"
+            class="hidden xl:block xl:absolute xl:-right-56 xl:top-0"
+          />
+        </div>
+      </div>
+      <div
+        class="xl:px-10 xl:flex xl:flex-col xl:text-start xl:w-1/2 xl:h-full xl:mt-16"
+      >
+        <div class="flex flex-col mb-11 xl:mb-20">
+          <div
+            class="font-bold text-3xl text-veryDarkGrayBlue mb-6 px-14 xl:px-0"
+          >
+            <p>Introducing an extensible editor</p>
+          </div>
+          <div class="text-veryDarkGrayish px-5 xl:px-0 xl:leading-8">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </div>
+        </div>
+        <div class="flex flex-col mb-11">
+          <div
+            class="font-bold text-3xl text-veryDarkGrayBlue mb-6 px-14 xl:px-0"
+          >
+            <p>Robust content management</p>
+          </div>
+          <div class="text-veryDarkGrayish px-10 xl:px-0 xl:leading-8">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Section 1 -->
+    <section class="bg-veryDarkBlue mb-16 xl:mb-28">
+      <div class="relative">
+        <img
+          src="/images/illustration-phones.svg"
+          alt="2x iPhone 11 showing the brand name and catalog"
+          class="absolute -top-40 xl:-top-16 xl:left-32"
+        />
+      </div>
+      <div
+        class="flex flex-col text-center mt-64 absolute xl:right-20 xl:mt-32 xl:w-5/12 xl:text-start"
+      >
+        <div class="font-bold text-4xl mb-6 px-10 xl:px-0">
+          <p>State of the Art Infrastructure</p>
+        </div>
+        <div class="px-10 text-md font-thin xl:px-0 xl:w-5/6">
+          With reliability and speed in mind, worldwide data centers provide the
+          backbone for ultra-fast connectivity. This ensures your site will load
+          instantly, no matter where your readers are, keeping your site
+          competitive.
+        </div>
+      </div>
+    </section>
+    <!-- End Section 1 -->
+
+    <!-- Section 2 -->
+    <div id="section-two" class="text-center mb-20 xl:flex">
+      <div id="laptop" class="h-96 mb-4"></div>
+      <div class="xl:flex xl:flex-col xl:justify-center">
+        <div class="flex flex-col text-center mb-12 xl:text-start">
+          <div class="font-bold text-4xl mb-6 px-8">
+            <p class="text-black text-2xl xl:text-3xl">Free, open, simple</p>
+          </div>
+          <div
+            class="px-10 text-veryDarkGrayish text-md font-thin xl:leading-8"
+          >
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </div>
+        </div>
+        <div class="flex flex-col text-center xl:text-start xl:leading-8">
+          <div class="font-bold text-4xl mb-6 px-8">
+            <p class="text-black text-2xl xl:text-3xl">Powerful tooling</p>
+          </div>
+          <div class="px-10 text-veryDarkGrayish text-md font-thin">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <main class="text-center text-black flex flex-col mb-60">
-    <div class="mb-10">
-      <p class="text-2xl font-bold">  Designed for the future</p>
-    </div>
-    <div class="mb-12">
-      <img src="/images/illustration-editor-mobile.svg" alt="Illustration Editor">
-    </div>
-    <div class="flex flex-col mb-11">
-      <div class="font-bold text-2xl text-veryDarkGrayBlue mb-6 px-14">
-        <p>Introducing an extensible editor</p>
-      </div>
-      <div class="text-veryDarkGrayish px-5">
-        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-        change the looks of a blog.
+    <!-- End Section 2 -->
 
+    <!-- Footer -->
+    <footer
+      class="bg-veryDarkBlackBlue text-center xl:flex xl:justify-around xl:items-center xl:pt-20"
+    >
+      <div class="pt-16 mb-16 xl:pt-0 xl:mb-60">
+        <p class="font-bold text-3xl xl:text-start">Blogr</p>
       </div>
-    </div>
-    <div class="flex flex-col mb-11">
-      <div class="font-bold text-2xl text-veryDarkGrayBlue mb-6 px-14">
-        <p>Robust content management</p>
+      <div class="xl:flex xl:flex-col">
+        <div class="mb-4">
+          <p class="font-bold">Product</p>
+        </div>
+        <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
       </div>
-      <div class="text-veryDarkGrayish px-10">
-        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      <div class="xl:flex xl:flex-col xl:pt-0">
+        <div class="mb-4">
+          <p class="font-bold">Company</p>
+        </div>
+        <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
       </div>
-    </div>
-  </main>
-  <section class="bg-veryDarkBlue mb-16">
-    <div class="relative">
-      <img src="/images/illustration-phones.svg" alt="2x iPhone 11 showing the brand name and catalog" class="absolute -top-40">
-    </div>
-    <div class="flex flex-col text-center mt-64 absolute">
-      <div class="font-bold text-4xl mb-6 px-10">
-        <p>State of the Art Infrastructure</p>
+      <div class="xl:flex xl:flex-col">
+        <div class="mb-4">
+          <p class="font-bold">Connect</p>
+        </div>
+        <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Linkedln</a>
+        </div>
       </div>
-      <div class="px-10 text-md font-thin">
-        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-      </div>
-    </div>
-  </section>
-  <div id="section-two" class="text-center mb-20" >
-    <div id="laptop" class="h-96 mb-4"></div>
-    <div class="flex flex-col text-center mb-12">
-      <div class="font-bold text-4xl mb-6 px-8">
-        <p class="text-black text-2xl">Free, open, simple</p>
-      </div>
-      <div class="px-10 text-veryDarkGrayish text-md font-thin">
-        Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-      </div>
-    </div>
-    <div class="flex flex-col text-center">
-      <div class="font-bold text-4xl mb-6 px-8">
-        <p class="text-black text-2xl">Powerful tooling</p>
-      </div>
-      <div class="px-10 text-veryDarkGrayish text-md font-thin">
-        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-        capable of producing even the most complicated sites.
-      </div>
-    </div>
-  </div>
-  <footer class="bg-veryDarkBlackBlue text-center">
-    <div class="pt-16 mb-16">
-      <p class="font-bold text-3xl">Blogr</p>
-    </div>
-    <div class="mb-4">
-      <p class="font-bold">Product</p>
-    </div>
-    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
-      <a href="#">Overview</a>
-      <a href="#">Pricing</a>
-      <a href="#">Marketplace</a>
-      <a href="#">Features</a>
-      <a href="#">Integrations</a>
-    </div>
-    <div class="mb-4">
-      <p class="font-bold">Company</p>
-    </div>
-    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
-      <a href="#">About</a>
-      <a href="#">Team</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-    </div>
-    <div class="mb-4">
-      <p class="font-bold">Connect</p>
-    </div>
-    <div class="flex flex-col leading-10 mb-12 text-grayishBlue">
-      <a href="#">Contact</a>
-      <a href="#">Newsletter</a>
-      <a href="#">Linkedln</a>
-    </div>
+    </footer>
 
-  </footer>
-
-
-
-  <!-- Product
+    <!-- Product
 
   Overview
   Pricing
@@ -249,12 +370,11 @@
   Newsletter
   LinkedIn -->
 
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
