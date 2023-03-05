@@ -8,6 +8,7 @@
     height: 525px;
     border-bottom-left-radius: 100px;
     width: 100%;
+    background-image: url('/images/bg-pattern-intro-mobile.svg');
     background-size: 1200px;
     background-position: 34% 34%;
     opacity: 10;
@@ -67,6 +68,16 @@ footer{
 
 
 @media(min-width: 1440px){
+    #desktop-image{
+        background-image: url('/images/bg-pattern-intro-desktop.svg');
+        background-size: 3000px;
+        background-position: 21% 52%;
+        background-repeat: no-repeat;
+
+    }
+    #menu-links{
+        height: 50px;
+    }
     main{
         height: 900px;
     }
